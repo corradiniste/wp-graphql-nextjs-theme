@@ -30,9 +30,9 @@ export const getStaticPaths = async () => {
  return {
     paths: data.pages.nodes.map((page => ({
         params: {
-            slug: page.uri.substring(1, page.uri.lenght - 1).split("/"),
-        },
-    })), 
-    fallback: false,
+            slug: page.uri.substring(1, page.uri.length - 1).split("/"),
+          },
+        })),
+      fallback: false,
+    };
   };
-};
